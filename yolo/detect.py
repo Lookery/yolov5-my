@@ -124,7 +124,7 @@ if __name__ == '__main__':
                         default=base_dir + '/data/voc/test/VOCdevkit/VOC2007/JPEGImages/')
     parser.add_argument('--video_dir',
                         type=str, help='detect video dir',
-                        default=base_dir + '/data/sample/467488924-1-208.mp4')
+                        default=base_dir + '/data/sample/370853990-1-192.mp4')
     parser.add_argument('--class_name_dir',
                         type=str, default=base_dir + '/data/voc/voc.names',
                         help='classes name dir')

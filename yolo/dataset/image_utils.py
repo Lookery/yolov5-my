@@ -13,7 +13,6 @@ def resize_image(img, target_sizes, keep_ratio=True, label=None):
     if not isinstance(target_sizes, (list, set, tuple)):
         target_sizes = [target_sizes, target_sizes]
     target_h, target_w = target_sizes
-
     h, w, _ = img.shape
     scale = min(target_h / h, target_w / w)
     temp_h, temp_w = int(scale * h), int(scale * w)

@@ -16,7 +16,7 @@ class Mish(object):
 
 class LeakyRelu(object):
     def __call__(self, x):
-        return tf.nn.leaky_relu(x)
+        return tf.nn.leaky_relu(x, alpha=0.1)
 
 
 class Swish(object):
