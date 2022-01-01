@@ -36,7 +36,7 @@ class YoloLoss(object):
             conf_focal = tf.squeeze(tf.math.pow(true_obj - pred_obj, 2), -1)
 
             # iou/ giou/ ciou/ diou loss
-            iou = bbox_iou(pred_box, true_box, xyxy=False, ciou=True)
+            iou = bbox_iou(pred_box, true_box, xyxy=False, diou=True)
             iou_loss = (1 - iou) * obj_mask * box_scale  # batch_size * grid * grid * 3
 
             # confidence loss, Todo: multiply the iou 

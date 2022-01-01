@@ -68,7 +68,7 @@ class Trainer(object):
                                     img_size=self.params['img_size'])
             self.optimizer = Optimizer('adam')()
 
-    def train(self, train_dataset, valid_dataset=None, transfer='darknet'):
+    def train(self, train_dataset, valid_dataset=None, transfer='scratch'):
         """ train function
         :param train_dataset: train dataset built by tf.data
         :param valid_dataset: valid dataset build by td.data, optional

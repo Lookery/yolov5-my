@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 class Optimizer(object):
-    def __init__(self, optimizer_method='sgd'):
+    def __init__(self, optimizer_method='adam'):
         self.optimizer_method = optimizer_method
 
     def __call__(self):
